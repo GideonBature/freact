@@ -1,5 +1,5 @@
 import { useState } from "react";
-import fetchUsers from "../../services/getUser"
+import fetchUsers from "../../services/user.service"
 import type UserData from "../../interfaces/iUser";
 import UserCard from "../UserCard/UserCard";
 

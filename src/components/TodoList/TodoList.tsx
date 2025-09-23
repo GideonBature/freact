@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type TodoData from "../../interfaces/iTodo";
-import fetchTodos from "../../services/getTodo";
+import fetchTodos from "../../services/todo.service";
 import Card from "../TodoCard/TodoCard";
 import "./TodoList.css";
 

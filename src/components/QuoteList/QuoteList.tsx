@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type QuoteData from "../../interfaces/iQuote";
-import fetchQuote from "../../services/getQuote";
+import fetchQuote from "../../services/quote.service";
 import QuoteCard from "../QuoteCard/QuoteCard";
 import "./QuoteList.css"
 
