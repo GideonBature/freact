@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;   /* allow cards to wrap to next line */
+  gap: 15px;         /* spacing between cards */
+  justify-content: center; /* optional: center align */
+}
+
+@media (max-width: 900px) {
+  .card { flex: 1 1 45%; } /* ~2 per row */
+}
+
+@media (max-width: 600px) {
+  .card { flex: 1 1 100%; } /* 1 per row */
+}

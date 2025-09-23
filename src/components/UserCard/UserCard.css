@@ -1,0 +1,9 @@
+.card {
+  flex: 1 1 220px;   /* grows, shrinks, min-width 220px */
+  max-width: 300px;  /* stops cards from being too wide */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: solid 1px grey;
+}
