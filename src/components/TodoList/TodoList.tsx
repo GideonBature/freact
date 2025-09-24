@@ -1,18 +1,10 @@
-import { useState } from "react";
 import type TodoData from "../../interfaces/iTodo";
-import fetchTodos from "../../services/todo.service";
 import Card from "../TodoCard/TodoCard";
+import json from "../../services/todo.service";
 import "./TodoList.css";
 
 export default function Todo() {
-    const [todos, setTodos] = useState<TodoData[]>([]);
-
-    async function fetchData() {
-        const datas = await fetchTodos();
-        setTodos(datas);
-    }
-
-    fetchData();
+    const todos: TodoData[] = json;
 
     return (
         <div className="container">

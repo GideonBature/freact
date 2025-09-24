@@ -1,16 +1,9 @@
-import { useState } from "react";
-import fetchUsers from "../../services/user.service"
 import type UserData from "../../interfaces/iUser";
+import json from "../../services/user.service";
 import UserCard from "../UserCard/UserCard";
 
 export default function UserList() {
-    const [users, setUser] = useState<UserData[]>([]);
-    async function fetchData() {
-        const data = await fetchUsers();
-        setUser(data);
-    }
-
-    fetchData();
+    const users: UserData[] = json;
 
     return (
         <>
